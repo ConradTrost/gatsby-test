@@ -1,0 +1,13 @@
+html {
+    font-size: 100%;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Playfair Display';
+        src: url('https://fonts.googleapis.com/css?family=Playfair+Display');
+    }
+  h1 {
+    @apply text-3xl;
+  }
+}
