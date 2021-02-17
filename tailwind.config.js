@@ -1,10 +1,18 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     container: {
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        accent: 'var(--accent)',
+        'main-text': 'var(--text-main)',
+        'secondary-text': 'var(--text-secondary)',
+      },
+    },
   },
   variants: {
     extend: {},
