@@ -21,6 +21,7 @@ module.exports = {
       animation: ['hover'],
       cursor: ['hover'],
       borderWidth: ['hover'],
+      borderColor: ['hover'],
     },
   },
   plugins: [],

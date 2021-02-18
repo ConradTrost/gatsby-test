@@ -7,5 +7,5 @@
   Gatsby Test Site with Tailwind.css
 </h1>
 
-## [Live Site](https://conradtrost.com) created using Netlify
+### [Live Site](https://conradtrost.com) deployed via Netlify
 ### Developed by [Conrad Trost](https://github.com/retro1967)

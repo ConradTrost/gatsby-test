@@ -24,10 +24,10 @@ const NavBar = () => {
         <div className={`${
         theme === 'light' ? 'theme-light' : 'theme-dark'
         } absolute bg-transparent w-full text-main-text flex justify-between p-2 items-center`}>
-            <h3>Conrad Trost</h3>
+            <h3 className="text-xl md:text-xl">Conrad Trost</h3>
             <div className="theToggle items-center flex">
-                <a href="https://trost.dev" className="border-b-0 border-main-text hover:border-b m-2" rel="noopener noreferrer" target="_blank">Portfolio</a>
-                <a href="https://github.com/retro1967" className="border-b-0 border-main-text hover:border-b m-2" rel="noopener noreferrer" target="_blank">GitHub</a>
+                <a href="https://trost.dev" className="text-xl border-b duration-200 border-transparent hover:border-main-text m-2" rel="noopener noreferrer" target="_blank">Portfolio</a>
+                <a href="https://github.com/retro1967" className="text-xl border-b duration-200 border-transparent hover:border-main-text m-2" rel="noopener noreferrer" target="_blank">GitHub</a>
                 <Toggle
                 className="m-2"
                 icons={{checked: <FontAwesomeIcon icon={faSun} color="white" />, unchecked: <FontAwesomeIcon icon={faMoon} color="white" />}}
