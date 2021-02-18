@@ -8,7 +8,7 @@ import {
   faMoon
 } from '@fortawesome/free-solid-svg-icons';
 
-const NavBar = ({ children }) => {
+const NavBar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const handleThemeToggle = () => {
@@ -23,10 +23,13 @@ const NavBar = ({ children }) => {
     <>
         <div className={`${
         theme === 'light' ? 'theme-light' : 'theme-dark'
-        } absolute bg-transparent w-full text-main-text flex justify-between p-5`}>
+        } absolute bg-transparent w-full text-main-text flex justify-between p-2 items-center`}>
             <h3>Conrad Trost</h3>
-            <div className="theToggle">
+            <div className="theToggle items-center flex">
+                <a href="https://trost.dev" className="border-b-0 border-main-text hover:border-b m-2" rel="noopener noreferrer" target="_blank">Portfolio</a>
+                <a href="https://github.com/retro1967" className="border-b-0 border-main-text hover:border-b m-2" rel="noopener noreferrer" target="_blank">GitHub</a>
                 <Toggle
+                className="m-2"
                 icons={{checked: <FontAwesomeIcon icon={faSun} color="white" />, unchecked: <FontAwesomeIcon icon={faMoon} color="white" />}}
                 id="theme-toggle"
                 checked={theme === 'light' ? true : false}

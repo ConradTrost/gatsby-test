@@ -14,14 +14,19 @@ const IndexPage = () => {
       <NavBar />
       <div className={`${
         theme === 'light' ? 'theme-light' : 'theme-dark'
-        } bg-gradient-to-r from-primary to-secondary text-main-text transition-all duration-300 m-0 px-5 py-5 min-h-screen`}>
-        <main className="flex h-80">
+        } bg-gradient-to-br from-primary via-primary to-grad-color text-main-text transition-all duration-300 m-0 px-5 py-5 min-h-screen flex items-center justify-center`}>
           {/* {children} */}
-          <div className="m-auto text-center">
-            <h1 className="m-5">hello</h1>
-            <h2>This is a dark mode test</h2>
-          </div>
-        </main>
+          <main className=" text-center p-50 w-10/12">
+            <h1 className="">Welcome</h1>
+            <h4>This is a test website using Gatsby.js and Tailwind.css</h4>
+            <h4>For further information on who I am, visit my portfolio below.</h4>
+            <a href="https://trost.dev" rel="noreferrer noopener" target="_blank">
+              <button className="transform bg-secondary text-white hover:scale-105 p-3 m-5 mb-40 rounded text-primary">Visit my Portfolio</button>
+            </a>
+            <a href="https://github.com/retro1967/gatsby-test" rel="noreferrer noopener" target="_blank">
+              <button className="transform bg-secondary text-white hover:scale-105 p-3 m-5 mb-40 rounded text-primary">View this Repository</button>
+            </a>
+          </main>
       </div>
       <Footer />
     </div>

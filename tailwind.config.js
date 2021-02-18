@@ -9,13 +9,19 @@ module.exports = {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         accent: 'var(--accent)',
+        'light-accent': 'var(--light-accent)',
+        'grad-color': 'var(--grad-color)',
         'main-text': 'var(--text-main)',
         'secondary-text': 'var(--text-secondary)',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ['hover'],
+      cursor: ['hover'],
+      borderWidth: ['hover'],
+    },
   },
   plugins: [],
 }

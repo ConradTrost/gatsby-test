@@ -4,15 +4,19 @@
 
 .theme-light {
   --primary: #F6F7F8;
-  --secondary: #DFE0E2;
-  --accent: #488286;
+  --secondary: #071013;
+  --accent: #36bdc7;
+  --light-accent: #85caca;
+  --grad-color: #F6F7F8;
   --text-main: #071013;
   --text-secondary: #EE6055;
 }
 .theme-dark {
   --primary: #071013;
-  --secondary: #3a3a3a;
-  --accent: #EE6055;
+  --secondary: #F6F7F8;
+  --accent: #b82b21;
+  --light-accent: #c9534b;
+  --grad-color: #093e47;
   --text-main: #DFE0E2;
   --text-secondary: #DFE0E2;
 }
@@ -20,6 +24,10 @@
 @font-face {
   font-family: 'Playfair Display';
   src: url('https://fonts.googleapis.com/css?family=Playfair+Display');
+}
+
+html {
+  font-family: 'Playfair Display';
 }
 
 h1 {
@@ -32,6 +40,10 @@ h2 {
 
 h3 {
   font-size: 34px;
+}
+
+h4 {
+  font-size: 28px;
 }
 
 h1, h2, h3, h4 {
@@ -87,23 +99,16 @@ h1, h2, h3, h4 {
   height: 24px;
   padding: 0;
   border-radius: 30px;
-  background-color: #4D4D4D;
+  background-color: var(--light-accent);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: #000000;
+.react-toggle:hover .react-toggle-track {
+  background-color: var(--accent);
 }
 
-.react-toggle--checked .react-toggle-track {
-  background-color: #19AB27;
-}
-
-.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: #128D15;
-}
 
 .react-toggle-track-check {
   position: absolute;
