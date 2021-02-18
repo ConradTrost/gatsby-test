@@ -19,6 +19,7 @@ const IndexPage = () => {
           <main className=" text-center p-50 w-10/12">
             <h1 className="">Welcome</h1>
             <h4>This is a test website using Gatsby.js and Tailwind.css</h4>
+            <h4>This project was deployed on Netlify</h4>
             <h4>For further information on who I am, visit my portfolio below.</h4>
             <a href="https://trost.dev" rel="noreferrer noopener" target="_blank">
               <button className="transform bg-secondary text-white hover:scale-105 p-3 m-5 mb-40 rounded text-primary">Visit my Portfolio</button>

@@ -10,13 +10,19 @@ const ThemeContextProvider = ({ children }) => {
 useEffect(() => {
     function loadTheme() {
       const theme = localStorage.getItem('theme');
-      return theme || 'dark';
+        const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
+        if (userMedia.matches) {
+            return 'dark';
+        }
+
+      return theme || 'light';
     }
     setTheme(loadTheme());
   }, []);
 useEffect(() => {
     localStorage.setItem('theme', theme);
   }, [theme]);
+
 return (
     <ThemeContext.Provider value={{ theme: theme, setTheme: setTheme }}>
       {children}
