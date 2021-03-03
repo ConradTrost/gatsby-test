@@ -24,3 +24,5 @@ fields:
       format: markdown
   label: Content
   description: The main content / body of the blog post.
+pages:
+- blogs/urgent-text-document-test.md
