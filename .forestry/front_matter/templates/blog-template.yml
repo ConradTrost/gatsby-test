@@ -1,4 +1,26 @@
 ---
 label: Blog Template
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Headliner Text
+- name: subheader
+  type: text
+  config:
+    required: false
+  label: Subheader
+  description: Subheader Text
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+  description: The main content / body of the blog post.
